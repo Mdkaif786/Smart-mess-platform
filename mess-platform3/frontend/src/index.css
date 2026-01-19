@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Tailwind layers MUST be first */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animated background */
+.animated-light {
+  background: linear-gradient(-45deg, #FFE7E0, #B5E8FF, #FFC3A0, #FFABE1);
+  background-size: 400% 400%;
+  animation: gradientLight 12s ease infinite;
+}
+
+@keyframes gradientLight {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Glass card */
+.glass-box {
+  background: rgba(255, 255, 255, 0.4);
+}
+.present-day {
+  background-color: #22c55e !important; /* green */
+  color: white !important;
+  border-radius: 8px;
+}
+
+.absent-day {
+  background-color: #ef4444 !important; /* red */
+  color: white !important;
+  border-radius: 8px;
+}
